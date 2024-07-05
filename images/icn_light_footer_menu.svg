@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="menu" transform="translate(-290 -1331)">
+    <rect id="area" width="24" height="24" transform="translate(290 1331)" fill="#eef1f6" opacity="0"/>
+    <g id="icon">
+      <g id="Rectangle_152608" data-name="Rectangle 152608" transform="translate(292 1333)" fill="none" stroke="#333" stroke-width="1.5">
+        <rect width="9" height="9" rx="3" stroke="none"/>
+        <rect x="0.75" y="0.75" width="7.5" height="7.5" rx="2.25" fill="none"/>
+      </g>
+      <g id="Rectangle_152609" data-name="Rectangle 152609" transform="translate(292 1344)" fill="none" stroke="#333" stroke-width="1.5">
+        <rect width="9" height="9" rx="3" stroke="none"/>
+        <rect x="0.75" y="0.75" width="7.5" height="7.5" rx="2.25" fill="none"/>
+      </g>
+      <g id="Rectangle_152740" data-name="Rectangle 152740" transform="translate(303 1344)" fill="none" stroke="#0072ff" stroke-width="1.5">
+        <rect width="9" height="9" rx="3" stroke="none"/>
+        <rect x="0.75" y="0.75" width="7.5" height="7.5" rx="2.25" fill="none"/>
+      </g>
+      <g id="Rectangle_152611" data-name="Rectangle 152611" transform="translate(303 1333)" fill="none" stroke="#333" stroke-width="1.5">
+        <rect width="9" height="9" rx="3" stroke="none"/>
+        <rect x="0.75" y="0.75" width="7.5" height="7.5" rx="2.25" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

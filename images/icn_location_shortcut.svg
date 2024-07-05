@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="ic_16px_hom" transform="translate(-44 -93.225)">
+    <rect id="AREA" width="16" height="16" transform="translate(44 93.225)" fill="none" opacity="0"/>
+    <g id="home" transform="translate(-4.798 -1233.396)">
+      <path id="Exclusion_1" data-name="Exclusion 1" d="M18845.648,12252.678h-5.322a4.005,4.005,0,0,1-4-4v-4.433a1.064,1.064,0,0,1,.4-.818l4.947-4.055a2,2,0,0,1,1.314-.47,1.977,1.977,0,0,1,1.313.47l4.947,4.055a.893.893,0,0,1,.393.818h.006v4.433A4.006,4.006,0,0,1,18845.648,12252.678Zm-4.576-3.681a.75.75,0,0,0,0,1.5h3.8a.75.75,0,0,0,0-1.5Z" transform="translate(-18786.527 -10911.178)" fill="#111"/>
+    </g>
+  </g>
+</svg>

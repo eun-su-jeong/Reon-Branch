@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="ic_전체메뉴_조회관리" transform="translate(-27 -393)">
+    <rect id="Rectangle_152757" data-name="Rectangle 152757" width="20" height="20" transform="translate(27 393)" fill="red" opacity="0"/>
+    <g id="Group_38211" data-name="Group 38211" transform="translate(7.307 6.062)">
+      <g id="Ellipse_9842" data-name="Ellipse 9842" transform="translate(21.332 388.576)" fill="none" stroke="#0072ff" stroke-width="1.5">
+        <circle cx="8" cy="8" r="8" stroke="none"/>
+        <circle cx="8" cy="8" r="7.25" fill="none"/>
+      </g>
+      <path id="Path_93572" data-name="Path 93572" d="M38.872,406.987,35.9,404.015" transform="translate(-0.817 -1.688)" fill="none" stroke="#0072ff" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

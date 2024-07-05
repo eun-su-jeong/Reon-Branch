@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119.999" height="119.998" viewBox="0 0 119.999 119.998">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.677" y1="-0.08" x2="0.394" y2="0.469" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#cfeeb1"/>
+      <stop offset="1" stop-color="#47c575"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.677" y1="-0.08" x2="-0.056" y2="1" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.215" y1="-0.123" x2="0.929" y2="1.268" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#87ecf8"/>
+      <stop offset="1" stop-color="#349aff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.5" x2="0.778" y2="0.91" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffda20"/>
+      <stop offset="1" stop-color="#ffe028"/>
+    </linearGradient>
+    <filter id="타원_9956">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#fff" flood-opacity="0.349" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-5" x1="0.703" y1="1" x2="0.134" y2="0.053" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fb1"/>
+      <stop offset="1" stop-color="#f9a807"/>
+    </linearGradient>
+    <filter id="패스_96123">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.039" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="타원_9956-2">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.349" result="color-3"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color-3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="패스_96122">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-4"/>
+      <feFlood flood-opacity="0.039" result="color-4"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+      <feComposite operator="in" in="color-4"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="img_120px_02" transform="translate(0.001)">
+    <g id="그룹_38857" data-name="그룹 38857" transform="matrix(0.966, 0.259, -0.259, 0.966, 62.066, 8.622)">
+      <rect id="사각형_152844" data-name="사각형 152844" width="36.69" height="59.62" rx="5" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+      <path id="사각형_152845" data-name="사각형 152845" d="M3.2,0H27.446a3.2,3.2,0,0,1,3.2,3.2V50.377a3.2,3.2,0,0,1-3.2,3.2H3.2a3.2,3.2,0,0,1-3.2-3.2V3.2A3.2,3.2,0,0,1,3.2,0ZM27.446,51.977a1.6,1.6,0,0,0,1.6-1.6V3.2a1.6,1.6,0,0,0-1.6-1.6H3.2A1.6,1.6,0,0,0,1.6,3.2V50.377a1.6,1.6,0,0,0,1.6,1.6Z" transform="translate(3.022 3.022)" fill="#fff" style="mix-blend-mode: soft-light;isolation: isolate"/>
+      <path id="SYMBOL" d="M16.17,9.245a4.518,4.518,0,0,1-2.114,2.519,7.446,7.446,0,0,0,1.516-8.5C15,2.248,15.729,1.8,15.729,1.8a1.346,1.346,0,0,0-1.15,1.8,6.929,6.929,0,0,1,.386,4.635l-.551-.309.009-.013A5.81,5.81,0,0,0,10.4.969L10.4,0H9.272V6.379L14.5,9.359c-.1.193-.2.376-.3.548L8.947,6.865,3.674,9.907q-.158-.258-.3-.548L8.6,6.379V0H7.477l0,.969A5.81,5.81,0,0,0,3.451,7.921l.009.013-.551.309a6.93,6.93,0,0,1,.386-4.635,1.346,1.346,0,0,0-1.15-1.8s.732.444.157,1.464a7.446,7.446,0,0,0,1.516,8.5A4.517,4.517,0,0,1,1.7,9.245,1.535,1.535,0,0,0,0,8.5,1.719,1.719,0,0,1,.752,9.579a6.535,6.535,0,0,0,5.5,4.146v1.987H8.392V12.784a5.952,5.952,0,0,1-4.01-1.929l.539-.315a6.528,6.528,0,0,0,4,1.663h.026a6.527,6.527,0,0,0,4-1.663l.539.315a5.952,5.952,0,0,1-4.01,1.929v2.928h2.144V13.725a6.535,6.535,0,0,0,5.5-4.146A1.719,1.719,0,0,1,17.872,8.5a1.534,1.534,0,0,0-1.7.749m-2.794-1.9,0,0L10.422,5.7,10.406,2.17h.016a4.4,4.4,0,0,1,2.954,5.176M7.45,2.17h.016L7.45,5.7,4.5,7.351l0,0A4.4,4.4,0,0,1,7.45,2.17M8.945,8.2l2.941,1.72v0l-.026-.015a4.655,4.655,0,0,1-2.924,1.106A4.655,4.655,0,0,1,6.013,9.908l-.026.015v0Z" transform="translate(26.2 20.874) rotate(90)" fill="#fff" style="mix-blend-mode: soft-light;isolation: isolate"/>
+    </g>
+    <g id="그룹_38858" data-name="그룹 38858" transform="matrix(0.966, -0.259, 0.259, 0.966, 21.223, 20.555)">
+      <rect id="사각형_152844-2" data-name="사각형 152844" width="36.69" height="59.62" rx="5" transform="translate(0 0)" fill="url(#linear-gradient-2)"/>
+      <path id="사각형_152845-2" data-name="사각형 152845" d="M3.2,0H27.446a3.2,3.2,0,0,1,3.2,3.2V50.377a3.2,3.2,0,0,1-3.2,3.2H3.2a3.2,3.2,0,0,1-3.2-3.2V3.2A3.2,3.2,0,0,1,3.2,0ZM27.446,51.977a1.6,1.6,0,0,0,1.6-1.6V3.2a1.6,1.6,0,0,0-1.6-1.6H3.2A1.6,1.6,0,0,0,1.6,3.2V50.377a1.6,1.6,0,0,0,1.6,1.6Z" transform="translate(3.022 3.022)" fill="#fff" style="mix-blend-mode: soft-light;isolation: isolate"/>
+      <path id="SYMBOL-2" data-name="SYMBOL" d="M16.17,9.245a4.518,4.518,0,0,1-2.114,2.519,7.446,7.446,0,0,0,1.516-8.5C15,2.248,15.729,1.8,15.729,1.8a1.346,1.346,0,0,0-1.15,1.8,6.929,6.929,0,0,1,.386,4.635l-.551-.309.009-.013A5.81,5.81,0,0,0,10.4.969L10.4,0H9.272V6.379L14.5,9.359c-.1.193-.2.376-.3.548L8.947,6.865,3.674,9.907q-.158-.258-.3-.548L8.6,6.379V0H7.477l0,.969A5.81,5.81,0,0,0,3.451,7.921l.009.013-.551.309a6.93,6.93,0,0,1,.386-4.635,1.346,1.346,0,0,0-1.15-1.8s.732.444.157,1.464a7.446,7.446,0,0,0,1.516,8.5A4.517,4.517,0,0,1,1.7,9.245,1.535,1.535,0,0,0,0,8.5,1.719,1.719,0,0,1,.752,9.579a6.535,6.535,0,0,0,5.5,4.146v1.987H8.392V12.784a5.952,5.952,0,0,1-4.01-1.929l.539-.315a6.528,6.528,0,0,0,4,1.663h.026a6.528,6.528,0,0,0,4-1.663l.539.315a5.952,5.952,0,0,1-4.01,1.929v2.928h2.144V13.725a6.535,6.535,0,0,0,5.5-4.146A1.719,1.719,0,0,1,17.872,8.5a1.534,1.534,0,0,0-1.7.749m-2.794-1.9,0,0L10.422,5.7,10.406,2.17h.016a4.4,4.4,0,0,1,2.954,5.176M7.45,2.17h.016L7.45,5.7,4.5,7.351l0,0A4.4,4.4,0,0,1,7.45,2.17M8.945,8.2l2.941,1.72v0l-.026-.015a4.655,4.655,0,0,1-2.924,1.106A4.655,4.655,0,0,1,6.013,9.908l-.026.015v0Z" transform="translate(26.201 20.874) rotate(90)" fill="#fff" style="mix-blend-mode: soft-light;isolation: isolate"/>
+    </g>
+    <g id="그룹_38854" data-name="그룹 38854" transform="translate(14.698 42.164)">
+      <rect id="사각형_152843" data-name="사각형 152843" width="88.821" height="59.552" rx="5" transform="translate(0 1.777)" fill="#308dc4"/>
+      <path id="패스_93599" data-name="패스 93599" d="M4.441,0H84.38a4.443,4.443,0,0,1,4.441,4.444V55.108a4.443,4.443,0,0,1-4.441,4.444H4.441A4.443,4.443,0,0,1,0,55.108V4.444A4.443,4.443,0,0,1,4.441,0Z" fill="url(#linear-gradient-3)"/>
+      <rect id="사각형_152842" data-name="사각형 152842" width="88.821" height="11.555" transform="translate(0 10.666)" fill="#268da7" opacity="0.6" style="mix-blend-mode: multiply;isolation: isolate"/>
+    </g>
+    <rect id="area" width="119.934" height="119.998" transform="translate(-0.001 0)" fill="none"/>
+    <g id="그룹_40080" data-name="그룹 40080" transform="translate(89.069 60.747) rotate(-25)">
+      <path id="패스_95224" data-name="패스 95224" d="M0,0,.083,2.568c0,4.446,5.513,8.005,12.415,8.005S24.863,6.865,24.863,2.42L25,0Z" transform="translate(0 9.006)" fill="#e9a400"/>
+      <g data-type="innerShadowGroup">
+        <ellipse id="타원_9956-3" data-name="타원 9956" cx="12.498" cy="9.01" rx="12.498" ry="9.01" transform="translate(0 0)" fill="url(#linear-gradient-4)"/>
+        <g transform="matrix(0.91, 0.42, -0.42, 0.91, -55.05, -92.7)" filter="url(#타원_9956)">
+          <ellipse id="타원_9956-4" data-name="타원 9956" cx="12.498" cy="9.01" rx="12.498" ry="9.01" transform="translate(89.07 60.75) rotate(-25)" fill="#fff"/>
+        </g>
+      </g>
+      <g data-type="innerShadowGroup">
+        <path id="패스_96123-2" data-name="패스 96123" d="M9.882,0c5.458,0,9.882,3.058,9.882,6.83s-4.424,6.83-9.882,6.83S0,10.6,0,6.83,4.424,0,9.882,0Z" transform="translate(2.616 1.889)" fill="url(#linear-gradient-5)"/>
+        <g transform="matrix(0.91, 0.42, -0.42, 0.91, -55.05, -92.7)" filter="url(#패스_96123)">
+          <path id="패스_96123-3" data-name="패스 96123" d="M9.882,0c5.458,0,9.882,3.058,9.882,6.83s-4.424,6.83-9.882,6.83S0,10.6,0,6.83,4.424,0,9.882,0Z" transform="translate(92.24 61.35) rotate(-25)" fill="#fff"/>
+        </g>
+      </g>
+      <path id="패스_95225" data-name="패스 95225" d="M10.727,2.525a.591.591,0,0,0-.173-.187.8.8,0,0,0-.256-.117.956.956,0,0,0-.3-.033l-.013,0H8.929L9.577.776A.437.437,0,0,0,9.631.553a.447.447,0,0,0-.069-.22A.6.6,0,0,0,9.388.15.827.827,0,0,0,9.133.033.966.966,0,0,0,8.839,0a.925.925,0,0,0-.287.061A.735.735,0,0,0,8.319.2a.541.541,0,0,0-.138.2L6.891,3.2l-.8-1.742a.593.593,0,0,0-.271-.272.941.941,0,0,0-.857,0,.593.593,0,0,0-.271.272L3.884,3.2,2.6.4A.541.541,0,0,0,2.458.2.746.746,0,0,0,2.223.063.954.954,0,0,0,1.637.032a.8.8,0,0,0-.255.117.594.594,0,0,0-.175.183.443.443,0,0,0-.069.22.437.437,0,0,0,.054.223L1.84,2.183H.788a.957.957,0,0,0-.3.034.8.8,0,0,0-.256.117.591.591,0,0,0-.173.187.445.445,0,0,0,0,.45.591.591,0,0,0,.173.187.8.8,0,0,0,.256.117.956.956,0,0,0,.3.033H2.364l.821,1.781a.591.591,0,0,0,.271.282.943.943,0,0,0,.875,0A.591.591,0,0,0,4.6,5.087l.8-1.738.8,1.738a.593.593,0,0,0,.271.272.939.939,0,0,0,.856,0A.593.593,0,0,0,7.6,5.087l.821-1.779H10a.956.956,0,0,0,.3-.033.8.8,0,0,0,.256-.117.591.591,0,0,0,.173-.187.443.443,0,0,0,0-.448" transform="translate(7.104 6.272)" fill="#ffde00"/>
+    </g>
+    <g id="그룹_40081" data-name="그룹 40081" transform="translate(75.782 84.394) rotate(22)">
+      <path id="패스_95224-2" data-name="패스 95224" d="M0,0,.1,3c0,5.385,6.678,9.7,15.04,9.7S30.119,8.2,30.119,2.816L30.28,0Z" transform="translate(0 10.909)" fill="#e9a400"/>
+      <g data-type="innerShadowGroup">
+        <ellipse id="타원_9956-5" data-name="타원 9956" cx="15.14" cy="10.915" rx="15.14" ry="10.915" transform="translate(0 0)" fill="url(#linear-gradient-4)"/>
+        <g transform="matrix(0.93, -0.37, 0.37, 0.93, -101.88, -49.86)" filter="url(#타원_9956-2)">
+          <ellipse id="타원_9956-6" data-name="타원 9956" cx="15.14" cy="10.915" rx="15.14" ry="10.915" transform="translate(75.78 84.39) rotate(22)" fill="#fff"/>
+        </g>
+      </g>
+      <g data-type="innerShadowGroup">
+        <path id="패스_96122-2" data-name="패스 96122" d="M11.971,0c6.612,0,11.971,3.7,11.971,8.274s-5.36,8.274-11.971,8.274S0,12.844,0,8.274,5.36,0,11.971,0Z" transform="translate(3.169 2.289)" fill="url(#linear-gradient-5)"/>
+        <g transform="matrix(0.93, -0.37, 0.37, 0.93, -101.88, -49.86)" filter="url(#패스_96122)">
+          <path id="패스_96122-3" data-name="패스 96122" d="M11.971,0c6.612,0,11.971,3.7,11.971,8.274s-5.36,8.274-11.971,8.274S0,12.844,0,8.274,5.36,0,11.971,0Z" transform="translate(77.86 87.7) rotate(22)" fill="#fff"/>
+        </g>
+      </g>
+      <path id="패스_95225-2" data-name="패스 95225" d="M13,3.058a.715.715,0,0,0-.209-.226.974.974,0,0,0-.31-.141,1.158,1.158,0,0,0-.36-.04L12.1,2.646H10.817L11.6.94a.529.529,0,0,0,.065-.27A.541.541,0,0,0,11.583.4a.727.727,0,0,0-.211-.222A1,1,0,0,0,11.063.04,1.17,1.17,0,0,0,10.708,0a1.121,1.121,0,0,0-.348.073.89.89,0,0,0-.282.171.655.655,0,0,0-.167.242L8.347,3.877l-.973-2.11a.719.719,0,0,0-.329-.329,1.14,1.14,0,0,0-1.038,0,.719.719,0,0,0-.329.329L4.705,3.874,3.145.489A.655.655,0,0,0,2.978.248.9.9,0,0,0,2.693.077,1.156,1.156,0,0,0,1.984.039.97.97,0,0,0,1.674.18.72.72,0,0,0,1.463.4a.537.537,0,0,0-.084.267.529.529,0,0,0,.065.27l.785,1.706H.954a1.159,1.159,0,0,0-.36.041.974.974,0,0,0-.31.141.716.716,0,0,0-.209.226.539.539,0,0,0,0,.545.716.716,0,0,0,.209.226.974.974,0,0,0,.31.141A1.158,1.158,0,0,0,.953,4H2.864l.994,2.158a.715.715,0,0,0,.328.342,1.142,1.142,0,0,0,1.06,0,.715.715,0,0,0,.328-.342l.97-2.106.97,2.106a.719.719,0,0,0,.329.329,1.138,1.138,0,0,0,1.037,0,.719.719,0,0,0,.329-.329L10.2,4.007h1.913a1.158,1.158,0,0,0,.36-.04.974.974,0,0,0,.31-.141A.716.716,0,0,0,13,3.6a.536.536,0,0,0,0-.542" transform="translate(8.606 7.597)" fill="#ffde00"/>
+    </g>
+  </g>
+</svg>
