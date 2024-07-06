@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="area" width="12" height="12" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ic_8px_play" transform="translate(-108 -392)">
+    <rect id="area-2" data-name="area" width="12" height="12" transform="translate(108 392)" fill="none"/>
+    <g id="ic_8px_play-2" data-name="ic_8px_play" transform="translate(108 392)" clip-path="url(#clip-path)">
+      <path id="다각형_60" data-name="다각형 60" d="M5.909,1.308a1,1,0,0,1,1.682,0L12.51,8.959a1,1,0,0,1-.841,1.541H1.832A1,1,0,0,1,.99,8.959Z" transform="translate(12 -0.75) rotate(90)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

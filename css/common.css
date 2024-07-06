@@ -258,113 +258,190 @@
 .container .union-main section {
   position: relative;
 }
-.container .union-main section article {
+.container .union-main section .ui-product {
   display: flex;
   flex-direction: column;
   position: relative;
   padding: 0 24px;
 }
-.container .union-main section article .title {
+.container .union-main section .ui-product .title {
   padding-top: 16px;
 }
-.container .union-main section article .title h4 {
+.container .union-main section .ui-product .title h4 {
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 8px;
 }
-.container .union-main section article .content .product-recommend-list {
+.container .union-main section .ui-product .content .product-recommend-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.container .union-main section article .content .product-recommend-list ul {
+.container .union-main section .ui-product .content .product-recommend-list ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+1) a {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+1) a {
   background-color: var(--card-color-01);
   color: var(--text-color-02);
   display: block;
   border-radius: 20px;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+1) a .card {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+1) a .card {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 32px 24px 16px;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+1) a .card .title p {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+1) a .card .title p {
   font-size: 1.125rem;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+1) a .card .title h5 {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+1) a .card .title h5 {
   font-size: 1.25rem;
   font-weight: 500;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+1) a .card .content {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+1) a .card .content {
   display: flex;
   justify-content: space-between;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+1) a .card .content .meta .desc {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+1) a .card .content .meta .desc {
   font-size: 0.75rem;
   color: inherit;
   opacity: 0.8;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+2) a {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+2) a {
   background-color: var(--card-color-02);
   color: var(--text-color-02);
   display: block;
   border-radius: 20px;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+2) a .card {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+2) a .card {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 32px 24px 16px;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+2) a .card .title p {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+2) a .card .title p {
   font-size: 1.125rem;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+2) a .card .title h5 {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+2) a .card .title h5 {
   font-size: 1.25rem;
   font-weight: 500;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+2) a .card .content {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+2) a .card .content {
   display: flex;
   justify-content: space-between;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+2) a .card .content .meta .desc {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+2) a .card .content .meta .desc {
   font-size: 0.75rem;
   color: inherit;
   opacity: 0.8;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+3) a {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+3) a {
   background-color: var(--card-color-03);
   color: var(--text-color-02);
   display: block;
   border-radius: 20px;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+3) a .card {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+3) a .card {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 32px 24px 16px;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+3) a .card .title p {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+3) a .card .title p {
   font-size: 1.125rem;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+3) a .card .title h5 {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+3) a .card .title h5 {
   font-size: 1.25rem;
   font-weight: 500;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+3) a .card .content {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+3) a .card .content {
   display: flex;
   justify-content: space-between;
 }
-.container .union-main section article .content .product-recommend-list ul li:nth-child(3n+3) a .card .content .meta .desc {
+.container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+3) a .card .content .meta .desc {
   font-size: 0.75rem;
   color: inherit;
   opacity: 0.8;
+}
+.container .union-main section .notice {
+  padding: 32px 24px;
+}
+.container .union-main section .notice .content .ui-union-notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 0 24px;
+  border-radius: 20px;
+  background-color: #348fff;
+  box-shadow: none;
+}
+.container .union-main section .notice .content .ui-union-notice .media {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20px;
+}
+.container .union-main section .notice .content .ui-union-notice .media .icn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icn_union_notice.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.container .union-main section .notice .content .ui-union-notice .meta {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: calc(100% - 28px);
+  width: calc(100% - 28px);
+  overflow: hidden;
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+  overflow: hidden;
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper .content {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+  overflow: hidden;
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper .content .swiper {
+  height: 36px;
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper .content .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper .content .swiper .swiper-slide a {
+  color: var(--text-color-02);
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper .content .swiper-control .icn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/icn_swiper_pause.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper .content .swiper-control .icn.on {
+  background-image: url("../images/icn_swiper_play.svg");
+}
+.container .union-main section .notice .content .ui-union-notice .meta .notice-swiper .content .swiper-control .lbl {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
 }
 
 :root {

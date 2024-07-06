@@ -295,7 +295,7 @@ $card-colors: (
     section {
       position: relative;
 
-      article {
+      .ui-product {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -358,6 +358,99 @@ $card-colors: (
                           opacity: .8;
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .notice{
+        padding: 32px 24px;
+        //padding-bottom: 0;
+        .content{
+          .ui-union-notice{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            padding: 0 24px;
+            border-radius: 20px;
+            background-color: #348fff;
+            box-shadow: none;
+
+
+            .media {
+              flex-grow: 0;
+              flex-shrink: 0;
+              flex-basis: 20px;
+
+              .icn {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-image: url("../images/icn_union_notice.svg");
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+              }
+            }
+            .meta{
+              flex-grow: 0;
+              flex-shrink: 0;
+              flex-basis: calc(100% - 28px);
+              width: calc(100% - 28px);
+              overflow: hidden;
+
+              .notice-swiper{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 60px;
+                overflow: hidden;
+
+                .content{
+                  display: flex;
+                  gap: 8px;
+                  justify-content: space-between;
+                  align-items: center;
+                  height: 36px;
+                  overflow: hidden;
+
+                  .swiper{
+                    height: 36px;
+
+                    .swiper-slide{
+                      display: flex;
+                      align-items: center;
+
+                      a{
+                        color: var(--text-color-02);
+                      }
+                    }
+                  }
+
+                  .swiper-control{
+                    .icn{
+                      display: block;
+                      width: 20px;
+                      height: 20px;
+                      background-image: url("../images/icn_swiper_pause.svg");
+                      background-repeat: no-repeat;
+                      background-position: 50% 50%;
+
+                      &.on{
+                          background-image: url("../images/icn_swiper_play.svg");
+                      }
+                    }
+                    .lbl{
+                      position: absolute;
+                      width: 1px;
+                      height: 1px;
+                      overflow: hidden;
+                      margin: -1px;
+                      clip: rect(0, 0, 0, 0);
                     }
                   }
                 }
