@@ -1,4 +1,22 @@
 @charset "UTF-8";
+body.overscroll .has-union {
+  top: -46px;
+}
+body.overscroll .has-union .union-wrap {
+  position: fixed;
+  width: 100%;
+  transform: translateY(-64px);
+}
+body.overscroll .has-union .union-wrap .ui-product .intro.hidden {
+  opacity: 0 !important;
+}
+body.overscroll .has-union .union-wrap .ui-product .extend.hidden {
+  opacity: 1 !important;
+}
+body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
+  opacity: 0 !important;
+}
+
 .container {
   background-color: var(--bg-color-02);
 }
@@ -6,7 +24,23 @@
   position: relative;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
   border-radius: 0 0 0 32px;
+  opacity: 0;
+  transition: background-color 0.4s ease;
+  animation-name: cu-header-motion;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
   z-index: 20;
+}
+@keyframes cu-header-motion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .container .has-union .header-wrap {
   width: 100%;
@@ -18,23 +52,6 @@
   width: 100%;
   height: 48px;
   background-color: var(--bg-color-01);
-  opacity: 0;
-  transition: background-color 0.6s ease;
-  animation-name: cu-header-motion;
-  animation-delay: 0.4s;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  border-radius: 0 0 0 32px;
-}
-@keyframes cu-header-motion {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .container .has-union .header-wrap article .header-title {
   padding-left: 24px;
@@ -160,6 +177,7 @@
   top: 0;
   padding: 0;
   transition: opacity 0.4s ease;
+  opacity: 1;
 }
 .container .has-union .union-wrap article .content .intro .meta {
   flex-grow: 1;
@@ -191,8 +209,10 @@
 .container .has-union .union-wrap article .content .extend {
   display: flex;
   align-items: center;
+  position: absolute;
   bottom: 0;
   height: 28px;
+  transition: opacity 0.4s ease;
   opacity: 0;
 }
 .container .has-union .union-wrap article .content .extend h3 {
@@ -234,6 +254,7 @@
 }
 .container .has-union .union-wrap article .content .toolbar .btns .union-info .content .lbl {
   margin-left: 4px;
+  font-size: 0.875rem;
 }
 .container .has-union .union-wrap article .content .toolbar .btns .union-tel {
   color: #555;
@@ -263,6 +284,24 @@
   flex-direction: column;
   position: relative;
   padding: 0 24px;
+  opacity: 0;
+  transition: background-color 0.4s ease;
+  animation-name: content-motion;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes content-motion {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .container .union-main section .ui-product .title {
   padding-top: 16px;
@@ -281,6 +320,15 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.container .union-main section .ui-product .content .product-recommend-list ul .card-cont {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.container .union-main section .ui-product .content .product-recommend-list ul .card-cont.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .container .union-main section .ui-product .content .product-recommend-list ul li:nth-child(3n+1) a {
   background-color: var(--card-color-01);
@@ -368,6 +416,7 @@
 }
 .container .union-main section .notice {
   padding: 32px 24px;
+  padding-bottom: 0;
 }
 .container .union-main section .notice .content .ui-union-notice {
   display: flex;
@@ -442,6 +491,136 @@
   overflow: hidden;
   margin: -1px;
   clip: rect(0, 0, 0, 0);
+}
+.container .union-main section .union-pr {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container .union-main section .union-pr .content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.container .union-main section .union-pr .content .union-pr-list {
+  padding: 0 24px;
+}
+.container .union-main section .union-pr .content .union-pr-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container .union-main section .union-pr .content .union-pr-list ul li a {
+  display: block;
+  padding: 20px 24px;
+  background-color: #eee;
+  box-shadow: none;
+  border-radius: 20px;
+  color: var(--text-color-01);
+}
+.container .union-main section .union-pr .content .union-pr-list ul li a .pr-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+.container .union-main section .union-pr .content .union-pr-list ul li a .pr-cont.cu-main .lbl {
+  flex-shrink: 0;
+  font-weight: 500;
+  color: var(--light-fc-00);
+  font-size: 14px;
+}
+.container .union-main section .union-pr .content .union-pr-list ul li a .pr-cont.cu-main .icn {
+  width: 95px;
+  height: 18px;
+  background-image: url("../images/union_pr_onbank_light.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.container .union-main section .union-pr .content .union-pr-list ul li a .pr-cont.onbank .lbl {
+  flex-shrink: 0;
+  font-weight: 500;
+  color: var(--light-fc-00);
+  font-size: 14px;
+}
+.container .union-main section .union-pr .content .union-pr-list ul li a .pr-cont.onbank .icn {
+  width: 95px;
+  height: 18px;
+  background-image: url("../images/union_pr_reon_light.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.container .branch-footer {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: auto;
+  transition: all 0.4s ease;
+  background-color: var(--bg-color-02);
+  z-index: 10;
+}
+.container .branch-footer section {
+  position: relative;
+}
+.container .branch-footer section article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container .branch-footer section article .bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  z-index: 20;
+  box-shadow: 0 -1px 1px #eee;
+}
+.container .branch-footer section article .btns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 24px;
+  z-index: 10;
+}
+.container .branch-footer section article .btns button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.container .branch-footer section article .btns button .media {
+  display: block;
+  padding: 0 4px;
+}
+.container .branch-footer section article .btns button .media .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+}
+.container .branch-footer section article .btns button .media .inner .icn {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.container .branch-footer section article .btns button .media .inner .icn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container .branch-footer section article .btns button .meta {
+  height: 16px;
+  line-height: 1;
+  font-size: 0.75rem;
+  transform: translateY(-8px);
+}
+.container .branch-footer section article .btns button .meta .lbl {
+  color: #555;
+  font-size: 0.8rem;
 }
 
 :root {
