@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="ico_80px_알림" transform="translate(5819 16124)">
+    <rect id="area" width="56" height="56" transform="translate(-5819 -16068) rotate(-90)" fill="red" opacity="0"/>
+    <g id="Group_39817" data-name="Group 39817" transform="translate(-5816.9 -16121.899)">
+      <path id="Path_95181" data-name="Path 95181" d="M25.9,0A25.9,25.9,0,1,1,0,25.9,25.9,25.9,0,0,1,25.9,0Z" transform="translate(0 0)" fill="#ccc"/>
+      <g id="Group_39816" data-name="Group 39816" transform="translate(23.1 14)">
+        <path id="Path_93525" data-name="Path 93525" d="M2.8,0h0A2.874,2.874,0,0,1,5.588,3.184L4.471,15.989A1.707,1.707,0,0,1,2.8,17.581a1.707,1.707,0,0,1-1.672-1.592L.011,3.184A2.874,2.874,0,0,1,2.8,0" transform="translate(0)" fill="#fff"/>
+        <ellipse id="Ellipse_9845" data-name="Ellipse 9845" cx="1.998" cy="2.006" rx="1.998" ry="2.006" transform="translate(0.802 19.988)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

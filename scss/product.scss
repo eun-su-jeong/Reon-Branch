@@ -38,6 +38,7 @@ body.overscroll {
 }
 .container {
   background-color: var(--bg-color-02);
+
   .has-union {
     position: relative;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
@@ -81,8 +82,12 @@ body.overscroll {
               text-decoration: none;
 
               span {
-                font-size: .8rem;
-                opacity: .7;
+                display: inline-block;
+                padding-left: 20px;
+                font-size: .875rem;
+                color: #000;
+                background: url("../images/chevron-left-solid.svg") no-repeat left center;
+                background-size: 10px;
               }
             }
           }
@@ -326,7 +331,7 @@ body.overscroll {
     }
   }
 
-  .union-main {
+  .product-main {
     background-color: var(--bg-color-02);
 
     section {
@@ -336,7 +341,7 @@ body.overscroll {
         display: flex;
         flex-direction: column;
         position: relative;
-        padding: 0 24px;
+        //padding: 0 24px;
         opacity: 0;
         transition: background-color .4s ease;
         animation-name: content-motion;
@@ -357,231 +362,247 @@ body.overscroll {
           }
         }
 
-        .title {
-          padding-top: 16px;
+        .union-tab {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          .tabs{
+            position: sticky;
+            top: 56px;
+            left: 0;
+            margin-top: -4px;
+            background-color: var(--bg-color-02);
+            z-index: 10;
+            transition: all .4s ease;
 
-          h4 {
-            font-size: 1.25rem;
-            font-weight: 500;
-            margin-bottom: 8px;
+            ul{
+              display: flex;
+              justify-content: center;
+              padding: 24px 0;
+              li{
+                padding: 0 10px;
+
+                a{
+                  justify-content: center;
+                  flex-direction: column;
+                  align-items: center;
+                  width: 100%;
+                  height: 50px;
+                  font-size: 1rem;
+                  font-weight: 500;
+                  color: var(--text-color-04);
+                  transition: all .2s .1s ease-in;
+                }
+                &.on{
+                  a{
+                    color: var(--text-color-01);
+                    font-weight: 700;
+                  }
+                  a:after{
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: #000;
+                    margin-top: 10px;
+                  }
+                }
+              }
+            }
           }
         }
 
-        .content {
-          .product-recommend-list {
+        .panner{
+          padding: 0 34px 30px  24px;
+          ul{
             display: flex;
             flex-direction: column;
-            gap: 16px;
-
-            ul {
-              display: flex;
-              flex-direction: column;
-              gap: 16px;
-
-              .card-cont {
-                opacity: 0;
-                transform: translateY(20px);
-                transition: opacity 0.6s ease, transform 0.6s ease;
+            gap: 24px;
+            li{
+              border-radius: 20px;
+              background-color: var(--bg-color-01);
+              box-shadow: 0 4px 8px rgba(0, 0, 0, .04);
+              .title{
+                display: flex;
+                align-items: center;
+                padding: 24px 24px 0;
+                h4{
+                  font-size: 1.125rem;
+                }
               }
-              .card-cont.visible {
-                opacity: 1;
-                transform: translateY(0);
-              }
-
-              @for $i from 1 through 3 {
-                li:nth-child(3n + #{$i}) a {
-                  background-color: nth($card-colors, $i);
-                  color: var(--text-color-02);
-                  display: block;
-                  border-radius: 20px;
-
-                  .card {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 12px;
-                    padding: 32px 24px 16px;
-
-                    .title {
-                      p {
-                        font-size: 1.125rem;
-                      }
-
-                      h5 {
-                        font-size: 1.25rem;
-                        font-weight: 500;
-                      }
-                    }
-
-                    .content {
-                      display: flex;
-                      justify-content: space-between;
-
-                      .meta {
-                        .desc {
-                          font-size: .75rem;
-                          color: inherit;
-                          opacity: .8;
+              .content{
+                &.card{
+                  a{
+                    align-items: center;
+                    .media{
+                      figure{
+                        background-color: transparent;
+                        img{
+                          width: 46px;
+                          height: auto!important;
                         }
                       }
                     }
                   }
                 }
-              }
-            }
-          }
-        }
-      }
-
-      .notice{
-        padding: 32px 24px;
-        padding-bottom: 0;
-        .content{
-          .ui-union-notice{
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            position: relative;
-            padding: 0 24px;
-            border-radius: 20px;
-            background-color: #348fff;
-            box-shadow: none;
-
-
-            .media {
-              flex-grow: 0;
-              flex-shrink: 0;
-              flex-basis: 20px;
-
-              .icn {
-                display: block;
-                width: 20px;
-                height: 20px;
-                background-image: url("../images/icn_union_notice.svg");
-                background-repeat: no-repeat;
-                background-position: 50% 50%;
-              }
-            }
-            .meta{
-              flex-grow: 0;
-              flex-shrink: 0;
-              flex-basis: calc(100% - 28px);
-              width: calc(100% - 28px);
-              overflow: hidden;
-
-              .notice-swiper{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height: 60px;
-                overflow: hidden;
-
-                .content{
-                  display: flex;
-                  gap: 8px;
-                  justify-content: space-between;
-                  align-items: center;
-                  height: 36px;
-                  overflow: hidden;
-
-                  .swiper{
-                    height: 36px;
-
-                    .swiper-slide{
-                      display: flex;
-                      align-items: center;
-
-                      a{
-                        color: var(--text-color-02);
-                      }
-                    }
-                  }
-
-                  .swiper-control{
-                    .icn{
-                      display: block;
-                      width: 20px;
-                      height: 20px;
-                      background-image: url("../images/icn_swiper_pause.svg");
-                      background-repeat: no-repeat;
-                      background-position: 50% 50%;
-
-                      &.on{
-                          background-image: url("../images/icn_swiper_play.svg");
-                      }
-                    }
-                    .lbl{
-                      position: absolute;
-                      width: 1px;
-                      height: 1px;
-                      overflow: hidden;
-                      margin: -1px;
-                      clip: rect(0, 0, 0, 0);
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .union-pr{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        .content{
-          padding-top: 16px;
-          padding-bottom: 16px;
-          .union-pr-list{
-            padding: 0 24px;
-            ul{
-              display: flex;
-              flex-direction: column;
-              gap: 16px;
-              li{
                 a{
-                  display: block;
-                  padding: 20px 24px;
-                  background-color: #eee;
-                  box-shadow: none;
-                  border-radius: 20px;
-                  color: var(--text-color-01);
-                  .pr-cont{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    gap: 8px;
-                    padding: 0;
+                  display: flex;
+                  gap: 12px;
+                  position: relative;
+                  min-height: 150px;
+                  padding: 24px;
 
-                    &.cu-main{
-                      .lbl{
-                        flex-shrink: 0;
-                        font-weight: 500;
-                        color: var(--light-fc-00);
-                        font-size: 14px;
-                      }
-                      .icn{
-                        width: 95px;
-                        height: 18px;
-                        background-image: url("../images/union_pr_onbank_light.svg");
-                        background-repeat: no-repeat;
-                        background-position: 50% 50%;
+                  &.local{
+                    flex-direction: column;
+                    align-items: center;
+
+                    .media{
+                      figure{
+                        width: 100px;
+                        height: 100px;
+                        img{
+                          width: 100%;
+                          height: 100%;
+                        }
                       }
                     }
-
-                    &.onbank{
-                      .lbl{
-                        flex-shrink: 0;
-                        font-weight: 500;
-                        color: var(--light-fc-00);
-                        font-size: 14px;
+                    .title{
+                      h4{
+                        text-align: center;
+                        color: var(--text-color-01);
                       }
-                      .icn{
-                        width: 95px;
-                        height: 18px;
-                        background-image: url("../images/union_pr_reon_light.svg");
-                        background-repeat: no-repeat;
-                        background-position: 50% 50%;
+                    }
+                    .meta{
+                      .content{
+                        align-items: center;
+                        .desc{
+                          text-align: center;
+                          p{
+                            color: var(--text-color-01)
+                          }
+                        }
+                      }
+                      .btn-more{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: var(--card-color-03);
+                        border-radius: 30px;
+                        span{
+                          display: block;
+                          padding: 4px 16px;
+                          font-size: 0.876rem;
+                          color: var(--text-color-02);
+                        }
+                      }
+                    }
+                  }
+
+                  &.empty{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 150px;
+                    padding: 24px;
+
+                    .media{
+                      figure{
+                        background-color: transparent;
+                        img{
+                          width: 100%;
+                          height: 100%;
+                        }
+                      }
+                    }
+                  }
+
+                  &:before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    background-color: var(--light-bc-01);
+                  }
+                  &:first-child:before{
+                    display: none;
+                  }
+                  .media{
+                    figure{
+                      display: inline-flex;
+                      align-items: center;
+                      align-content: center;
+                      justify-content: center;
+                      position: relative;
+                      width: 48px;
+                      height: 48px;
+                      border-radius: 50%;
+                      background-color: #eff6ff;
+                      img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 32px;
+                        height: 32px;
+                        transform: translate(-50%, -50%);
+                      }
+                    }
+                  }
+                  .meta{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    .title {
+                      padding: 0;
+
+                      h5 {
+                        font-weight: 500;
+                        color: var(--text-color-01);
+                      }
+
+                      .badge {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 20px;
+                        border-radius: 30px;
+                        padding: 0 10px;
+                        margin-left: 8px;
+                        background-color: var(--card-color-02);
+
+                        span {
+                          display: inline-block;
+                          color: var(--text-color-02);
+                          font-size: 0.75rem;
+                        }
+                      }
+                    }
+                    .content{
+                      display: flex;
+                      flex-direction: column;
+                      gap: 16px;
+                      padding: 0;
+
+                      .desc{
+                        p{
+                          font-size: 0.875rem;
+                          color: var(--text-color-04);
+                        }
+                      }
+                      .info{
+                        .value{
+                          span{
+                            color: var(--text-color);
+                            font-size: 0.875rem;
+
+                            .unit{
+                              font-weight: bold;
+                            }
+                          }
+                        }
                       }
                     }
                   }
@@ -594,14 +615,15 @@ body.overscroll {
     }
   }
 
-  .branch-footer{
+  .footer{
     position: sticky;
     bottom: 0;
     right: 0;
     left: 0;
     margin-top: auto;
     transition: all .4s ease;
-    background-color: var(--bg-color-02);
+    background-color: var(--bg-color-01);
+    border-radius: 20px 20px 0 0;
     z-index: 10;
     section{
       position: relative;

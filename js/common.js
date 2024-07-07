@@ -30,8 +30,8 @@
             $('body').addClass('overscroll');
             $('.ui-product .intro, .ui-product .toolbar').addClass('hidden').attr('aria-hidden', 'true');
             $('.ui-product .extend').addClass('hidden').attr('aria-hidden', 'false');
-        } else {
-            // 스크롤 업
+        } else if (currentScroll === 0) {
+            // 스크롤 올리고 top이 0이 되면
             $('body').removeClass('overscroll');
             $('.ui-product .intro, .ui-product .toolbar').removeClass('hidden').attr('aria-hidden', 'false');
             $('.ui-product .extend').removeClass('hidden').attr('aria-hidden', 'true');
@@ -39,7 +39,8 @@
         lastScrollTop = currentScroll;
     });
 
-    /* card */
+
+    /* card visible */
     function onScroll() {
         $('.card-cont').each(function() {
             let elementTop = $(this).offset().top;
@@ -53,5 +54,40 @@
 
     $(window).on('scroll', onScroll);
     onScroll();
+
+    /* tab */
+    const observerOptions = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const id = entry.target.id;
+            if (entry.isIntersecting) {
+                $('.tabs li').removeClass('on');
+                $('a[href="#' + id + '"]').parent().addClass('on');
+            }
+        });
+    }, observerOptions);
+
+    $('.card').each(function() {
+        observer.observe(this);
+    });
+
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() === 0) {
+            $('.tabs li').removeClass('on');
+            $('.tabs li:first-child').addClass('on');
+        }
+    });
+
+    /* tab click */
+    $('.tabs a').on('click', function(e) {
+        e.preventDefault();
+        const id = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    });
 
 })();
