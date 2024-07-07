@@ -1532,79 +1532,303 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
 .container .faq .ui-faq .search-result .faq-list ul li .answer p {
   color: var(--text-color-06);
 }
-.container footer {
-  position: sticky;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-top: auto;
-  background-color: var(--bg-color-02);
-  transition: all 0.4s ease;
-  z-index: 10;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color-01);
 }
-.container footer section {
+.container .has-menu {
   position: relative;
+  opacity: 0;
+  transition: background-color 0.4s ease;
+  animation-name: cu-header-motion;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  z-index: 20;
 }
-.container footer section article {
+@keyframes cu-header-motion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container .has-menu.on {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+.container .has-menu .header-wrap {
+  width: 100%;
+}
+.container .has-menu .header-wrap article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  background-color: #3d009a;
+}
+.container .has-menu .header-wrap article .header-title h1 a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.container .has-menu .header-wrap article .header-title h1 a span {
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 0.875rem;
+  color: var(--text-color-02);
+  background: url("../images/chevron-left-solid-f.svg") no-repeat;
+}
+.container .has-menu .header-wrap article .header-content {
+  padding-right: 16px;
+}
+.container .has-menu .header-wrap article .header-content .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button {
+  position: relative;
+  height: 48px;
+  padding: 0;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button .icn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button .icn .subset {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--bg-color-02);
+  transition: background-color 0.6s ease;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button .lbl {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+.container .evnet section {
+  background-image: linear-gradient(rgb(61, 0, 154), rgb(255, 149, 248));
+}
+.container .evnet section article {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.container footer section article .bg {
+.container .evnet section article .content .meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+}
+.container .evnet section article .content .meta .type .badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-size: 0.875rem;
+  color: var(--light-bg-00);
+  font-weight: 500;
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid;
+  border-radius: 100px;
+  background: none;
+}
+.container .evnet section article .content .meta .title h1 {
+  color: var(--text-color-02);
+  text-align: center;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.container .evnet section article .content .meta .arrow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-fc-00);
+  text-align: center;
+  margin-top: 24px;
+}
+.container .evnet section article .content .meta .arrow .arrow-down {
   display: block;
+  position: absolute;
+  left: 50%;
+  width: 15px;
+  height: 8px;
+  background: transparent url("../images/icn_chevron_down.svg") no-repeat 50% 50%;
+  transform: translate(-50%, 25px);
+  animation: bounce 0.7s linear infinite alternate;
+}
+@keyframes bounce {
+  0% {
+    bottom: 15px;
+    opacity: 0.2;
+  }
+  100% {
+    bottom: 5px;
+  }
+}
+.container .evnet section article .content .media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.container .evnet section article .content .media .ubooba {
+  position: relative;
+}
+.container .evnet section article .content .media .ubooba .ear {
+  position: absolute;
+  z-index: 0;
+  animation-name: ubooba-ear-motion;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  transform-origin: right bottom;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.container .evnet section article .content .media .ubooba .ear.left {
+  top: 28px;
+  left: 24px;
+}
+.container .evnet section article .content .media .ubooba .ear.right {
+  top: 35px;
+  right: 20px;
+  transform-origin: left bottom;
+  animation-direction: reverse;
+}
+@keyframes ubooba-ear-motion {
+  0% {
+    transform: rotate(0);
+  }
+  80% {
+    transform: rotate(0);
+  }
+  85% {
+    transform: rotate(0);
+  }
+  90% {
+    transform: rotate(-8deg);
+  }
+  95% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.container .evnet section article .content .media .ubooba .head {
+  position: relative;
+  z-index: 1;
+}
+.container .evnet section article .content .media .ubooba .eye {
+  position: absolute;
+  z-index: 1;
+  animation-name: ubooba-eye-motion;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  transform-origin: center;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.container .evnet section article .content .media .ubooba .eye.left {
+  top: 55px;
+  left: 57px;
+}
+.container .evnet section article .content .media .ubooba .eye.right {
+  top: 58px;
+  right: 60px;
+}
+@keyframes ubooba-eye-motion {
+  0% {
+    transform: scaleY(1);
+  }
+  80% {
+    transform: scaleY(1);
+  }
+  87% {
+    transform: scaleY(1);
+  }
+  90% {
+    transform: scaleY(0.3);
+  }
+  93% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.container .evnet section article .content .media .flip-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  position: relative;
+  transform: translateY(-40%);
+  height: 132px;
+  perspective: 1100px;
+  z-index: 2;
+}
+.container .evnet section article .content .media .flip-cards .flip-card {
+  position: relative;
+  width: 96px;
+  padding: 0;
+  transform-style: preserve-3d;
+  transition: 0.4s;
+}
+.container .evnet section article .content .media .flip-cards .flip-card .backside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  border-radius: 20px 20px 0 0;
-  z-index: 20;
-  box-shadow: 0 -1px 1px #eee;
+  backface-visibility: hidden;
 }
-.container footer section article .btns {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 0 24px;
-  z-index: 10;
-}
-.container footer section article .btns button {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-.container footer section article .btns button .media {
+.container .evnet section article .content .media .flip-cards .flip-card .backside img {
   display: block;
-  padding: 0 4px;
+  width: 100%;
 }
-.container footer section article .btns button .media .inner {
+.container .evnet section article .content .media .flip-cards .flip-card .frontside {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
-.container footer section article .btns button .media .inner .icn {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
-.container footer section article .btns button .media .inner .icn img {
+.container .evnet section article .content .media .flip-cards .flip-card .frontside img {
   display: block;
   width: 100%;
-  height: 100%;
 }
-.container footer section article .btns button .meta {
-  height: 16px;
-  line-height: 1;
-  font-size: 0.75rem;
-  transform: translateY(-8px);
-}
-.container footer section article .btns button .meta .lbl {
-  color: #555;
-  font-size: 0.8rem;
-}
-
 :root {
   --bg-color: #2681db;
   --bg-color-01: #fff;

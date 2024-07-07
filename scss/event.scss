@@ -1,0 +1,332 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color-01);
+
+  .has-menu{
+    position: relative;
+    opacity: 0;
+    transition: background-color .4s ease;
+    animation-name: cu-header-motion;
+    animation-delay: .4s;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    z-index: 20;
+
+    @keyframes cu-header-motion {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &.on {
+      position: fixed;
+      width: 100%;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    }
+
+    .header-wrap {
+      width: 100%;
+      article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        background-color: #3d009a;
+
+        .header-title {
+          h1 {
+            a {
+              font-size: 1.2rem;
+              font-weight: bold;
+              color: #fff;
+              text-decoration: none;
+
+              span {
+                display: inline-block;
+                padding-left: 20px;
+                font-size: .875rem;
+                color: var(--text-color-02);
+                background: url("../images/chevron-left-solid-f.svg") no-repeat;
+              }
+            }
+          }
+        }
+
+        .header-content {
+          padding-right: 16px;
+          .btns {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .header-button{
+              position: relative;
+              height: 48px;
+              padding: 0;
+
+              .icn {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                width: 32px;
+                height: 32px;
+                padding: 6px;
+
+                .subset {
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 2px;
+                  background-color: var(--bg-color-02);
+                  transition: background-color .6s ease;
+                }
+
+              }
+              .lbl {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                margin: -1px;
+                clip: rect(0, 0, 0, 0);
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  .evnet{
+    section{
+      background-image: linear-gradient(rgba(61, 0, 154, 1), rgba(255, 149, 248, 1));
+
+      article{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .content{
+          .meta{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 24px;
+            .type{
+              .badge{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                font-size: .875rem;
+                color: var(--light-bg-00);
+                font-weight: 500;
+                margin: 0;
+                padding: 6px 12px;
+                border: 1px solid;
+                border-radius: 100px;
+                background: none;
+              }
+            }
+            .title{
+              h1{
+                color: var(--text-color-02);
+                text-align: center;
+                text-shadow: 0px 3px 0px rgba(0, 0, 0, .3);
+              }
+            }
+            .arrow{
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              color: var(--dark-fc-00);
+              text-align: center;
+              margin-top: 24px;
+              p{}
+              .arrow-down{
+                display: block;
+                position: absolute;
+                left: 50%;
+                width: 15px;
+                height: 8px;
+                background: transparent url("../images/icn_chevron_down.svg") no-repeat 50% 50%;
+                transform: translate(-50%, 25px);
+                animation: bounce .7s linear infinite alternate;
+
+                @keyframes bounce {
+                  0% {
+                    bottom: 15px;
+                    opacity: .2;
+                  }
+                  100% {
+                    bottom: 5px;
+                  }
+                }
+              }
+            }
+          }
+          .media{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40px;
+            .ubooba{
+              position: relative;
+              .ear{
+                position: absolute;
+                z-index: 0;
+                animation-name: ubooba-ear-motion;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                transform-origin: right bottom;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                &.left{
+                  top: 28px;
+                  left: 24px;
+                }
+                &.right{
+                  top: 35px;
+                  right: 20px;
+                  transform-origin: left bottom;
+                  animation-direction: reverse;
+                }
+                @keyframes ubooba-ear-motion {
+                  0% {
+                    transform: rotate(0);
+                  }
+                  80% {
+                    transform: rotate(0);
+                  }
+                  85% {
+                    transform: rotate(0);
+                  }
+                  90% {
+                    transform: rotate(-8deg);
+                  }
+                  95% {
+                    transform: rotate(8deg);
+                  }
+                  100% {
+                    transform: rotate(0);
+                  }
+                }
+              }
+              .head{
+                position: relative;
+                z-index: 1;
+              }
+              .eye{
+                position: absolute;
+                z-index: 1;
+                animation-name: ubooba-eye-motion;
+                animation-duration: 2.5s;
+                animation-timing-function: ease-in-out;
+                transform-origin: center;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                &.left{
+                  top: 55px;
+                  left: 57px;
+                }
+                &.right{
+                  top: 58px;
+                  right: 60px;
+                }
+                @keyframes ubooba-eye-motion {
+                  0% {
+                    transform: scaleY(1);
+                  }
+                  80% {
+                    transform: scaleY(1);
+                  }
+                  87% {
+                    transform: scaleY(1);
+                  }
+                  90% {
+                    transform: scaleY(.3);
+                  }
+                  93% {
+                    transform: scaleY(1);
+                  }
+                  100% {
+                    transform: scaleY(1);
+                  }
+                }
+              }
+            }
+            .flip-cards{
+              display: flex;
+              flex-direction: row;
+              gap: 12px;
+              position: relative;
+              transform: translateY(-40%);
+              height: 132px;
+              perspective: 1100px;
+              z-index: 2;
+              .flip-card{
+                position: relative;
+                width: 96px;
+                padding: 0;
+                transform-style: preserve-3d;
+                transition: .4s;
+                .backside{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  backface-visibility: hidden;
+                  img{
+                    display: block;
+                    width: 100%;
+                  }
+                }
+                .frontside{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  backface-visibility: hidden;
+                  transform: rotateY(180deg);
+                  img{
+                    display: block;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .event-info{
+          ul{
+            li{}
+          }
+        }
+      }
+    }
+  }
+}
+
+
