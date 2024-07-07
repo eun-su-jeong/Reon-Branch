@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="ic_16px_q" transform="translate(-24 -296)">
+    <rect id="area" width="16" height="16" transform="translate(24 296)" fill="none"/>
+    <g id="ic" transform="translate(-0.5 -0.5)">
+      <line id="선_312" data-name="선 312" x2="5" y2="4.5" transform="translate(34 306.5)" fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+      <g id="사각형_152875" data-name="사각형 152875" transform="translate(25 297)" fill="none" stroke="#333" stroke-width="2">
+        <rect width="14" height="15" rx="7" stroke="none"/>
+        <rect x="1" y="1" width="12" height="13" rx="6" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

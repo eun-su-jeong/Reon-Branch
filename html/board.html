@@ -1,0 +1,364 @@
+<!doctype>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-title" content="Default">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="robots" content="no-index, follow">
+    <meta name="title" content="">
+    <meta name="author" content="">
+    <meta name="content" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="금융시스템 UI/UX, 모바일뱅킹, 인터넷뱅킹, 모바일창구, 웹사이트 및 모바일 구축">
+    <title>신협리온브랜치</title>
+    <link type="text/css" rel="stylesheet" href="../lib/jquery-ui-1.12.1.min.css">
+    <link type="text/css" rel="stylesheet" href="../lib/swiper-5.4.2.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/reset.css">
+    <link type="text/css" rel="stylesheet" href="../css/font.css">
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <script type="text/javascript" src="../lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery-ui-1.12.1.min.js"></script>
+    <script type="text/javascript" src="../lib/swiper-5.4.2.min.js"></script>
+    <script defer type="text/javascript" src="../js/common.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="has-menu">
+            <section class="header-wrap">
+                <article>
+                    <div class="header-title">
+                        <h1>
+                            <a href="./">
+                                <span>FAQ</span>
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="header-content">
+                        <div class="btns">
+                            <button class=" header-button" tabindex="0" type="button">
+                                <span class="icn">
+                                    <span class="subset"></span>
+                                    <span class="subset"></span>
+                                    <span class="subset"></span>
+                                    <span class="subset"></span>
+                                </span>
+                                <span class="lbl">전체메뉴</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </header>
+        <main class="faq">
+            <section>
+                <article class="ui-faq">
+                    <div class="search-form">
+                        <div class="content">
+                            <div class="field">
+                                <label>
+                                    <div class="field-inner">
+                                        <div class="field-wrap">
+                                            <input type="text" class="input" placeholder="조합명 또는 지역명 입력"/>
+                                            <button type="button" class="btn-search">
+                                                <i class="icn"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-filter">
+                        <div class="filter">
+                            <label><input type="checkbox" class="category" value="all">전체</label>
+                            <label><input type="checkbox" class="category" value="product01">예금/적금</label>
+                            <label><input type="checkbox" class="category" value="product02">대출</label>
+                            <label><input type="checkbox" class="category" value="card">카드</label>
+                            <label><input type="checkbox" class="category" value="branch">리온브랜치</label>
+                            <label><input type="checkbox" class="category" value="faq">고객센터</label>
+                            <label><input type="checkbox" class="category" value="etc">기타</label>
+                        </div>
+                    </div>
+                    <div class="search-result">
+                        <div class="faq-list">
+                            <ul>
+                                <li>
+                                   <div class="question">
+                                       <div class="title">
+                                          <span>Q</span>
+                                          <h5>Q
+                                              리온브랜치에서 할 수 있는 업무는 무엇인가요?</h5>
+                                       </div>
+                                       <div class="pointer">
+                                           <i class="icn"></i>
+                                       </div>
+                                   </div>
+                                    <div class="answer">
+                                        <p>리온브랜치에서는 창구 방문 없이 입출금 계좌를 개설하거나 예적금 상품 가입, 대출 신청, 카드 및 지역화폐 발급이 가능합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>Q
+                                                리온브랜치를 이용하기 위해서는 회원가입이 필요한가요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>리온브랜치를 이용하기 위해 별도의 회원가입 절차는 없습니다.
+                                            본인 명의의 휴대폰을 가지고 계시다면 리온브랜치의 서비스 이용이 가능하세요.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>Q
+                                                기업고객도 리온브랜치를 이용할 수 있나요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>리온브랜치는 개인고객 맞춤형 서비스이며, 기업고객에 해당하는 경우 리온브랜치를 통한 금융상품 가입은 어렵습니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>Q
+                                                조합에 등록된 휴대폰 번호를 변경하고 싶어요.</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>해당 조합이나 고객센터에 전화를 걸어 조합원정보변경을 요청 주시면, 정보변경 URL을 포함한 문자를 발송해드립니다.
+                                            해당 URL을 통해 정보를 변경해주세요.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>조합에 등록된 주소 정보를 변경하고 싶어요.</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>해당 조합이나 고객센터에 전화를 걸어 조합원정보변경을 요청 주시면, 정보변경 URL을 포함한 문자를 발송해드립니다.
+
+                                            해당 URL을 통해 정보를 변경해주세요.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>카드와 연결된 계좌를 변경하고 싶어요.</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>해당 조합이나 고객센터에 전화를 걸어 카드정보변경을 요청 주시면, 정보변경 URL을 포함한 문자를 발송해드립니다.
+
+                                            해당 URL을 통해 카드와 연결된 계좌를 변경해주세요.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>민간인증서란 무엇인가요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>간편인증서 또는 사설인증서라고도 불리며, 과거 존재했던 공인인증서를 대체하는 새로운 인증서입니다.
+
+                                            리온브랜치의 모든 서비스를 이용하기 위해서는 본인명의 휴대폰 이외에도 금융인증서 또는 민간인증서가 필요하며, 각 인증서의 발급 방법은 다음과 같습니다.
+
+
+
+                                            금융인증서
+
+                                            신협 온뱅크 어플 또는 자주 이용하는 은행 앱의 '인증센터'에 접속하여 '금융인증서 발급' 선택
+
+
+
+                                            민간인증서
+
+                                            토스, 네이버, 카카오페이 등 민간인증서를 발급 가능한 어플에 접속하여 '인증서 발급' 선택</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>신협에서 취급한다던 예적금 상품이 추천상품몰에 보이지가 않는데 잘못된건가요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>조합마다 취급하는 상품이 다르기에 전 상품이 보이지 않을 수 있다는 점 양해 부탁드립니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>유니온 예적금 가입시, 프로모션 코드 적용은 어떻게 하나요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>우선 조합에서 프로모션코드를 조합원님께 발급해야만 유니온 예적금 가입 화면에 프로모션코드를 입력할 수 있는 필드가 뜨게 됩니다. 해당 필드에 받으신 프로모션 코드를 입력하시면 적용된 상태로 유니온 예적금 개설이 되며, 개설 완료창에서 '상세금리확인'버튼을 누르시면 적용된 금리를 보실수 있습니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>Q
+                                                대출을 가입하려고 하는데 사용 가능한 입출금통장이 없다고 나와요.</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>대출 가입이 가능한 입출금통장은 다음과 같습니다. 아래 조건에 해당되는지를 확인해 주세요.
+
+                                            1. 개인용 입출금통장(한도계좌 포함)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>후불교통카드 발급하고 싶은데 어떻게 해야되나요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>현재 Cubig SIMPLE(하이브리드) 카드에서만 후불 교통카드 기능을 제공하고 있습니다. Cubig SIMPLE(하이브리드) 카드는 리온브랜치 조합상품몰에서 발급 가능 합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>상품몰에 없는 체크카드는 어디서 발급이 가능한가요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>상품몰에 없는 체크카드 상품들은 신협 인터넷 뱅킹(openbank.cu.co.kr) 또는 가까운 신협을 내방하여 발급 가능합니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>예적금을 저율과세로 개설하는 방법을 알려주세요</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>비과세 상품가입은 먼저 입출금계좌개설 -> 해당 입출금계좌 조합의 조합원가입(MY온뱅크에서)을 통해서 정조합원이 되시면 예적금을 저율과세로 개설하실 수 있습니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>대출은 어느 메뉴에서 받아야 하나요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>대출은 상품몰에서 대출 상품명을 클릭하면 신청할 수 있습니다. 다만, 상품몰에 대출상품이 없는 경우 현재 이용 중인 조합에서 대출 상품을 취급하고 있지 않는 것으로 취급 여부에 대해서는 해당 조합에 문의하시기 바랍니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>입출금예금을 개설할 때 이용하는 조합을 선택해야 하나요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>입출금예금을 개설하기 위해서는 이용조합을 선택해야 합니다. 향후 조합 방문이 필요한 경우를 위하여 거주지나 직장과 가까운 조합을 선택하는 것이 좋습니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>입출금예금은 여러개 개설할 수 있나요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>계좌 개설수에 제한은 없습니다. 다만, 입출금통장 개설 시 금융거래 한도계좌로 개설됨을 원칙으로 하고 있으며, 금융거래 한도계좌는 1인 1계좌만 가능하므로 금융거래 한도계좌를 보유한 경우에는 금융거래 한도계좌 해제 후 추가 개설이 가능합니다. 또한, 대포통장 근절을 위해 최근 20영업일 이내 타 금융기관 또는 온뱅크에서 입출금통장을 개설하신 경우, 새로운 입출금통장을 만들 수 없습니다.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="question">
+                                        <div class="title">
+                                            <span>Q</span>
+                                            <h5>계좌 개설 시 필요한 준비물은 무엇인가요?</h5>
+                                        </div>
+                                        <div class="pointer">
+                                            <i class="icn"></i>
+                                        </div>
+                                    </div>
+                                    <div class="answer">
+                                        <p>필요한 준비물은 다음과 같습니다. 주민등록증, 운전면허증과 같은 신분증</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -28,11 +28,14 @@
         if (currentScroll > lastScrollTop) {
             // 스크롤 다운
             $('body').addClass('overscroll');
+            $('.has-menu').addClass('on');
             $('.ui-product .intro, .ui-product .toolbar').addClass('hidden').attr('aria-hidden', 'true');
             $('.ui-product .extend').addClass('hidden').attr('aria-hidden', 'false');
+            console.log("되나?");
         } else if (currentScroll === 0) {
             // 스크롤 올리고 top이 0이 되면
             $('body').removeClass('overscroll');
+            $('.has-menu').removeClass('on');
             $('.ui-product .intro, .ui-product .toolbar').removeClass('hidden').attr('aria-hidden', 'false');
             $('.ui-product .extend').removeClass('hidden').attr('aria-hidden', 'true');
         }
@@ -88,6 +91,26 @@
         $('html, body').animate({
             scrollTop: $(id).offset().top
         }, 500);
+    });
+
+    /* accordion */
+    $('.faq-list .answer').hide();
+    $('.faq-list .question .icn').css('transform', 'rotate(0deg)');
+
+    $('.faq-list .question').on('click', function() {
+        let answer = $(this).next('.answer');
+        if (answer.is(':visible')) {
+            answer.slideUp();
+            $(this).find('.icn').css('transform', 'rotate(0deg)');
+            $(this).find('.title span').css('background-color', 'var(--text-color-01)');
+        } else {
+            $('.faq-list .answer').slideUp();
+            $('.faq-list .question .icn').css('transform', 'rotate(0deg)');
+            $('.faq-list .question .title span').css('background-color', 'var(--text-color-01)');
+            answer.slideDown();
+            $(this).find('.icn').css('transform', 'rotate(180deg)');
+            $(this).find('.title span').css('background-color', 'var(--primary-color)');
+        }
     });
 
 })();

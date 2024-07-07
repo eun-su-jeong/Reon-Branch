@@ -1216,10 +1216,400 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   font-size: 0.8rem;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color-01);
+}
+.container .has-menu {
+  position: relative;
+  opacity: 0;
+  transition: background-color 0.4s ease;
+  animation-name: cu-header-motion;
+  animation-delay: 0.4s;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  z-index: 20;
+}
+@keyframes cu-header-motion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container .has-menu.on {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+.container .has-menu .header-wrap {
+  width: 100%;
+}
+.container .has-menu .header-wrap article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  background-color: var(--bg-color-01);
+}
+.container .has-menu .header-wrap article .header-title {
+  padding-left: 24px;
+}
+.container .has-menu .header-wrap article .header-title h1 a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+.container .has-menu .header-wrap article .header-title h1 a span {
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 0.875rem;
+  color: #000;
+  background: url("../images/chevron-left-solid.svg") no-repeat left center;
+  background-size: 10px;
+}
+.container .has-menu .header-wrap article .header-content .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button {
+  position: relative;
+  height: 48px;
+  padding: 0;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button .icn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button .icn .subset {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--bg-color-03);
+  transition: background-color 0.6s ease;
+}
+.container .has-menu .header-wrap article .header-content .btns .header-button .lbl {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+}
+.container .faq .ui-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  opacity: 0;
+  width: 100%;
+  animation-name: ui-seek-motion;
+  animation-delay: 0.4s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes ui-seek-motion {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container .faq .ui-faq .search-form {
+  width: 100%;
+  padding: 0 24px;
+}
+.container .faq .ui-faq .search-form .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+}
+.container .faq .ui-faq .search-form .title h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.container .faq .ui-faq .search-form .content {
+  position: relative;
+}
+.container .faq .ui-faq .search-form .content .field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.container .faq .ui-faq .search-form .content .field label {
+  border-radius: 30px;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: var(--bg-color-01);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap {
+  display: flex;
+  align-items: center;
+  flex: 1000 1 0;
+  padding: 0 24px;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap .input {
+  width: 100%;
+  height: 52px;
+  border: none;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap .input:focus {
+  outline: none;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap:focus-within {
+  outline: var(--primary-color) 1px solid;
+  border-radius: 30px;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap .btn-search {
+  width: 20px;
+  height: 20px;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap .btn-search .icn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/icn_product_search.svg") no-repeat 0 0/cover;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap .btn-search .lbl {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.container .faq .ui-faq .search-filter {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 24px;
+}
+.container .faq .ui-faq .search-filter .filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .faq .ui-faq .search-filter .filter label {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: var(--bg-color-01);
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.876rem;
+}
+.container .faq .ui-faq .search-filter .filter label:hover {
+  background-color: #e0e0e0;
+}
+.container .faq .ui-faq .search-filter .filter label input[type=checkbox] {
+  display: none;
+}
+.container .faq .ui-faq .search-filter .filter label input[type=checkbox] + span {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.container .faq .ui-faq .search-filter .filter label input[type=checkbox] + span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.container .faq .ui-faq .search-filter .filter label input[type=checkbox] + span::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 5px;
+  height: 10px;
+  border: solid #007BFF;
+  border-width: 0 2px 2px 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.container .faq .ui-faq .search-filter .filter label input[type=checkbox]:checked + span::before {
+  border-color: #007BFF;
+  background-color: #007BFF;
+}
+.container .faq .ui-faq .search-filter .filter label input[type=checkbox]:checked + span::after {
+  opacity: 1;
+}
+.container .faq .ui-faq .search-result {
+  width: 100%;
+}
+.container .faq .ui-faq .search-result .faq-list ul li .question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--light-bc-00);
+  cursor: pointer;
+}
+.container .faq .ui-faq .search-result .faq-list ul li .question:hover {
+  background-color: #e0e0e0;
+}
+.container .faq .ui-faq .search-result .faq-list ul li .question .title {
+  display: flex;
+  gap: 8px;
+}
+.container .faq .ui-faq .search-result .faq-list ul li .question .title span {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 16px;
+  width: 16px;
+  height: 16px;
+  font-size: 0;
+  margin-top: 2px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  background-color: var(--text-color-01);
+  mask-image: url("../images/icn_faq_typo_q.svg");
+}
+.container .faq .ui-faq .search-result .faq-list ul li .question .title h5 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-weight: 500;
+  color: var(--text-color-01);
+}
+.container .faq .ui-faq .search-result .faq-list ul li .question .pointer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  width: 24px;
+  margin-top: 4px;
+  padding-right: 0;
+  transition: transform 0.3s;
+}
+.container .faq .ui-faq .search-result .faq-list ul li .question .pointer .icn {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/icn_dropdown.svg") no-repeat 0 0/cover;
+  transition: transform 0.3s;
+}
+.container .faq .ui-faq .search-result .faq-list ul li .answer {
+  width: 100%;
+  padding: 24px;
+  background-color: var(--bg-color-02);
+}
+.container .faq .ui-faq .search-result .faq-list ul li .answer p {
+  color: var(--text-color-06);
+}
+.container footer {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: auto;
+  background-color: var(--bg-color-02);
+  transition: all 0.4s ease;
+  z-index: 10;
+}
+.container footer section {
+  position: relative;
+}
+.container footer section article {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container footer section article .bg {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  z-index: 20;
+  box-shadow: 0 -1px 1px #eee;
+}
+.container footer section article .btns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 24px;
+  z-index: 10;
+}
+.container footer section article .btns button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.container footer section article .btns button .media {
+  display: block;
+  padding: 0 4px;
+}
+.container footer section article .btns button .media .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+}
+.container footer section article .btns button .media .inner .icn {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.container footer section article .btns button .media .inner .icn img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.container footer section article .btns button .meta {
+  height: 16px;
+  line-height: 1;
+  font-size: 0.75rem;
+  transform: translateY(-8px);
+}
+.container footer section article .btns button .meta .lbl {
+  color: #555;
+  font-size: 0.8rem;
+}
+
 :root {
   --bg-color: #2681db;
   --bg-color-01: #fff;
   --bg-color-02: #f5f5f5;
+  --bg-color-03: #333;
   --primary-color: #0072ff;
   --card-color-01: #348fff;
   --card-color-02: #07a2a8;
@@ -1230,6 +1620,7 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   --text-color-03: #000;
   --text-color-04: #939393;
   --text-color-05: #111;
+  --text-color-06: #777;
   --light-bc-00: rgba(0, 0, 0, .12);
   --light-bc-01: rgba(0, 0, 0, .08);
   --light-bc-02: rgba(0, 0, 0, .04);
@@ -1367,6 +1758,7 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   right: 0;
   left: 0;
   margin-top: auto;
+  background-color: var(--bg-color-01);
   transition: all 0.4s ease;
   z-index: 10;
 }
@@ -1434,6 +1826,9 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
 }
 
 /* main */
+.main-common {
+  background-color: var(--bg-color-01);
+}
 .main-common .main-visual {
   position: relative;
   overflow: hidden;
@@ -1552,6 +1947,7 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   position: relative;
   border-radius: 30px;
   border: 1px solid #ccc;
+  background-color: var(--bg-color-01);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 .main-common .ui-seek .seek-form .content .field label .field-inner .field-wrap {
