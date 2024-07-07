@@ -5,7 +5,7 @@
   height: 100vh;
   background-color: var(--bg-color-01);
 
-  .has-menu{
+  .has-menu.event{
     position: relative;
     opacity: 0;
     transition: background-color .4s ease;
@@ -43,6 +43,7 @@
         background-color: #3d009a;
 
         .header-title {
+          padding-left: 20px;
           h1 {
             a {
               font-size: 1.2rem;
