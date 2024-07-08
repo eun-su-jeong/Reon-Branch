@@ -1650,7 +1650,7 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   align-items: center;
   height: 32px;
   font-size: 0.875rem;
-  color: var(--light-bg-00);
+  color: var(--text-color-02);
   font-weight: 500;
   margin: 0;
   padding: 6px 12px;
@@ -1659,6 +1659,8 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   background: none;
 }
 .container .evnet section article .content .meta .title h1 {
+  font-size: 2rem;
+  font-weight: 700;
   color: var(--text-color-02);
   text-align: center;
   text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
@@ -1669,7 +1671,7 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--dark-fc-00);
+  color: var(--text-color-02);
   text-align: center;
   margin-top: 24px;
 }
@@ -1726,17 +1728,11 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   0% {
     transform: rotate(0);
   }
-  80% {
-    transform: rotate(0);
-  }
-  85% {
-    transform: rotate(0);
-  }
   90% {
-    transform: rotate(-8deg);
+    transform: rotate(-10deg);
   }
   95% {
-    transform: rotate(8deg);
+    transform: rotate(10deg);
   }
   100% {
     transform: rotate(0);
@@ -1771,13 +1767,10 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   80% {
     transform: scaleY(1);
   }
-  87% {
-    transform: scaleY(1);
-  }
   90% {
     transform: scaleY(0.3);
   }
-  93% {
+  95% {
     transform: scaleY(1);
   }
   100% {
@@ -1799,8 +1792,12 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   width: 96px;
   padding: 0;
   transform-style: preserve-3d;
-  transition: 0.4s;
+  transition: transform 0.4s;
 }
+.container .evnet section article .content .media .flip-cards .flip-card.flipped {
+  transform: rotateY(180deg);
+}
+.container .evnet section article .content .media .flip-cards .flip-card .frontside,
 .container .evnet section article .content .media .flip-cards .flip-card .backside {
   display: flex;
   justify-content: center;
@@ -1812,26 +1809,133 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   left: 0;
   backface-visibility: hidden;
 }
-.container .evnet section article .content .media .flip-cards .flip-card .backside img {
-  display: block;
-  width: 100%;
-}
 .container .evnet section article .content .media .flip-cards .flip-card .frontside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  backface-visibility: hidden;
   transform: rotateY(180deg);
 }
-.container .evnet section article .content .media .flip-cards .flip-card .frontside img {
+.container .evnet section article .content .media .flip-cards .flip-card .backside {
+  transform: rotateY(0deg);
+}
+.container .evnet section article .content .media .flip-cards .flip-card img {
   display: block;
   width: 100%;
 }
+.container .evnet section article .event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px 24px 32px;
+  border-radius: 30px 30px 0 0;
+  background-color: var(--bg-color-01);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.008);
+  z-index: 1;
+}
+.container .evnet section article .event-info .list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.container .evnet section article .event-info .list ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container .evnet section article .event-info .list ul li .info {
+  font-size: 0.875rem;
+}
+.container .evnet section article .event-info .list ul li .info .content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0;
+  background-color: transparent;
+}
+.container .evnet section article .event-info .list ul li .info .content dl {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.container .evnet section article .event-info .list ul li .info .content dl dt {
+  white-space: nowrap;
+}
+.container .evnet section article .event-info .list ul li .info .content dl dt.badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  font-size: 0.75rem;
+  color: var(--text-color-02);
+  margin: 0;
+  padding: 0 8px;
+  border-radius: 100px;
+  background: var(--primary-color);
+  font-weight: 500;
+}
+.container .evnet section article .event-info .list ul li .info .content dl dd {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.container .evnet section article .event-info .list ul li .info .content dl dd .rank-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.container .evnet section article .event-info .list ul li .info .content dl dd .rank-list ul li p {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+}
+.container .evnet section article .event-info .list ul li .info .content dl dd .rank-list ul li p .icn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.container .evnet section article .event-info .list ul li .info .content dl dd .rank-list ul li:nth-of-type(1) p .icn {
+  background-image: url("../images/icn_rank_1.png");
+}
+.container .evnet section article .event-info .list ul li .info .content dl dd .rank-list ul li:nth-of-type(2) p .icn {
+  background-image: url("../images/icn_rank_2.png");
+}
+.container .evnet section article .event-info .list ul li .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 15px;
+  background-color: var(--bg-color-02);
+}
+.container .evnet section article .event-info .list ul li .box .title h5 {
+  color: var(--text-color-05);
+  font-weight: 700;
+}
+.container .evnet section article .event-info .list ul li .desc {
+  padding-top: 16px;
+  font-size: 0.875rem;
+}
+.container .evnet section article .event-info .list ul li .desc .bl-asterisk {
+  position: relative;
+  padding-left: 0.8rem !important;
+  color: var(--primary-color);
+}
+.container .evnet section article .event-info .list ul li .desc .bl-asterisk:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "*";
+}
+.container .evnet section article .event-info .list ul li.last .desc {
+  color: var(--text-color-04);
+}
+
 :root {
   --bg-color: #2681db;
   --bg-color-01: #fff;

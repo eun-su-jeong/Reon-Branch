@@ -113,4 +113,21 @@
         }
     });
 
+    /*card flip*/
+    $('.flip-card').on('click', function() {
+        const card = $(this);
+
+        if ($('.flip-card.flipped').length > 0 && !card.hasClass('flipped')) {
+            return;
+        }
+
+        card.toggleClass('flipped');
+
+        setTimeout(function() {
+            if (card.hasClass('flipped')) {
+                alert('꽝!');
+            }
+        }, 400); 
+    });
+
 })();
