@@ -1158,6 +1158,9 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   background: url("../images/chevron-left-solid.svg") no-repeat left center;
   background-size: 10px;
 }
+.container .has-menu.faq .header-wrap article .header-content {
+  padding-right: 16px;
+}
 .container .has-menu.faq .header-wrap article .header-content .btns {
   display: flex;
   justify-content: center;
@@ -1265,7 +1268,10 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
 }
 .container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap:focus-within {
   outline: var(--primary-color) 1px solid;
-  border-radius: 30px;
+  border-radius: 10px;
+}
+.container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap:focus-within .btn-search .icn {
+  background: url("../images/icn_product_search_hover.svg") no-repeat 0 0/cover;
 }
 .container .faq .ui-faq .search-form .content .field label .field-inner .field-wrap .btn-search {
   width: 20px;

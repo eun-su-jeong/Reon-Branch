@@ -152,5 +152,4 @@
         $('.drawer-wrap').removeClass('is-opend');
         $('body').removeClass('hidden');
     });
-
 })();
