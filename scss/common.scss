@@ -29,6 +29,10 @@
 
 }
 
+body.hidden{
+  overflow: hidden;
+}
+
 /* common */
 .container{
   display: flex;
@@ -89,7 +93,7 @@
           flex-grow: 0;
           flex-shrink: 0;
           flex-basis: auto;
-          padding-right: 8px;
+          padding-right: 16px;
           .btns{
             display: flex;
             justify-content: center;
@@ -103,7 +107,7 @@
               height: 32px;
               position: relative;
               padding: 0;
-              background-color: rgba(255,255,255,.2);
+              background-color: rgba(255,255,255,.15);
               border-radius: 50%;
               animation-name: decrease;
               animation-duration: 1.5s;
@@ -135,14 +139,14 @@
                   transform: translate(-5px, -5px) scale(1);
 
                   &.large{
-                      transform: translate(3px, -3px) scale(1);
+                      transform: translate(4px, -4px) scale(.9);
                       opacity: .3;
                   }
                   &:before{
                       content: '가';
                   }
                   &.small{
-                      transform: translate(-5px, 5px) scale(.6);
+                      transform: translate(-4px, 4px) scale(.55);
                   }
                   &:before{
                       content: '가';
@@ -306,6 +310,9 @@
                     }
                   }
                 }
+                &:last-of-type{
+                  padding-bottom: 180px;
+                }
               }
               > li + li:before{
                 position: absolute;
@@ -319,6 +326,13 @@
               }
             }
           }
+          &::-webkit-scrollbar{
+            width: 10px;
+          }
+          &::-webkit-scrollbar-thumb{
+            background: rgba(0,0,0,.2);
+            border-radius: 2px;
+          }
         }
 
         .nav-favorite{
@@ -326,6 +340,7 @@
           bottom: 0;
           left: 0;
           width: 100%;
+          padding: 0 16px;
           border-radius: 20px 20px 0 0;
           background-color: var(--bg-color-01);
           box-shadow: 0 -4px 8px rgba(0, 0, 0, .08);
