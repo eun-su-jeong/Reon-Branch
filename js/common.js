@@ -139,6 +139,13 @@
         $('body').addClass('hidden');
     });
 
+    $('.header-button').on('click', function(event) {
+       event.preventDefault();
+        $('aside').addClass('is-opend');
+        $('.drawer-wrap').addClass('is-opend');
+        $('body').addClass('hidden');
+    });
+
     $('.btn-close').on('click', function(event) {
         event.preventDefault();
         $('aside').removeClass('is-opend');
