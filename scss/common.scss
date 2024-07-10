@@ -212,10 +212,9 @@ body.hidden{
             justify-content: center;
             align-items: center;
 
-            button{
+            .button{
               position: relative;
               width: 36px;
-              height: 36px;
               padding: 0;
 
               &.btn-home{

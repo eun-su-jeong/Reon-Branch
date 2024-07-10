@@ -550,78 +550,6 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.container .branch-footer {
-  position: sticky;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-top: auto;
-  transition: all 0.4s ease;
-  background-color: var(--bg-color-02);
-  z-index: 10;
-}
-.container .branch-footer section {
-  position: relative;
-}
-.container .branch-footer section article {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.container .branch-footer section article .bg {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 20px 20px 0 0;
-  z-index: 20;
-  box-shadow: 0 -1px 1px #eee;
-}
-.container .branch-footer section article .btns {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 0 24px;
-  z-index: 10;
-}
-.container .branch-footer section article .btns button {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-.container .branch-footer section article .btns button .media {
-  display: block;
-  padding: 0 4px;
-}
-.container .branch-footer section article .btns button .media .inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 42px;
-}
-.container .branch-footer section article .btns button .media .inner .icn {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
-.container .branch-footer section article .btns button .media .inner .icn img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.container .branch-footer section article .btns button .meta {
-  height: 16px;
-  line-height: 1;
-  font-size: 0.75rem;
-  transform: translateY(-8px);
-}
-.container .branch-footer section article .btns button .meta .lbl {
-  color: #555;
-  font-size: 0.8rem;
-}
 
 body.overscroll .has-union {
   top: -46px;
@@ -2125,19 +2053,18 @@ body.hidden {
   justify-content: center;
   align-items: center;
 }
-.container aside .drawer-wrap article .nav-toolbar .btns button {
+.container aside .drawer-wrap article .nav-toolbar .btns .button {
   position: relative;
   width: 36px;
-  height: 36px;
   padding: 0;
 }
-.container aside .drawer-wrap article .nav-toolbar .btns button.btn-home .icn {
+.container aside .drawer-wrap article .nav-toolbar .btns .button.btn-home .icn {
   display: block;
   width: 32px;
   height: 32px;
   background: url("../images/icn_nav_home.svg") no-repeat center/cover;
 }
-.container aside .drawer-wrap article .nav-toolbar .btns button.btn-home .lbl {
+.container aside .drawer-wrap article .nav-toolbar .btns .button.btn-home .lbl {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -2145,13 +2072,13 @@ body.hidden {
   margin: -1px;
   clip: rect(0, 0, 0, 0);
 }
-.container aside .drawer-wrap article .nav-toolbar .btns button.btn-close .icn {
+.container aside .drawer-wrap article .nav-toolbar .btns .button.btn-close .icn {
   display: block;
   width: 32px;
   height: 32px;
   background: url("../images/icn_nav_close.svg") no-repeat center/cover;
 }
-.container aside .drawer-wrap article .nav-toolbar .btns button.btn-close .lbl {
+.container aside .drawer-wrap article .nav-toolbar .btns .button.btn-close .lbl {
   position: absolute;
   width: 1px;
   height: 1px;
