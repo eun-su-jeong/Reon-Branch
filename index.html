@@ -24,6 +24,8 @@
     <script type="text/javascript" src="./lib/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="./lib/jquery-ui-1.12.1.min.js"></script>
     <script type="text/javascript" src="./lib/swiper-5.4.2.min.js"></script>
+    <script defer type="text/javascript" src="../js/common.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -55,13 +57,20 @@
                 </article>
             </section>
         </header>
-        <aside style="display:none">
+        <aside>
+            <div class="backdrop"></div>
             <section class="drawer-wrap">
                 <article>
                     <div class="nav-toolbar">
                         <div class="btns">
-                            <button type="button" class="btn-home">홈</button>
-                            <button type="button" class="btn-close">닫기</button>
+                            <button type="button" class="btn-home">
+                                <span class="icn"></span>
+                                <span class="lbl">홈</span>
+                            </button>
+                            <button type="button" class="btn-close">
+                                <span class="icn"></span>
+                                <span class="lbl">닫기</span>
+                            </button>
                         </div>
                     </div>
                     <div class="nav-scroll">
@@ -69,40 +78,42 @@
                             <ul class="nav-p3">
                                 <li class="nav-panel">
                                     <div class="title">
-                                        <span class="icn"></span>
+                                        <span class="icn product"></span>
                                         <h4>상품몰</h4>
                                     </div>
                                     <div class="content">
                                         <ul class="nav-p4">
-                                            <li><a href="./">통합상품몰</a></a></li>
+                                            <li><a href="./">통합상품몰</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="nav-panel">
                                     <div class="title">
-                                        <span class="icn"></span>
+                                        <span class="icn manage"></span>
                                         <h4>조회관리</h4>
                                     </div>
                                     <div class="content">
                                         <ul class="nav-p4">
-                                            <li><a href="./">통합상품몰</a></a></li>
+                                            <li><a href="./">신청내역조회</a></li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="nav-panel">
                                     <div class="title">
-                                        <span class="icn"></span>
+                                        <span class="icn customer"></span>
                                         <h4>고객센터</h4>
                                     </div>
                                     <div class="content">
                                         <ul class="nav-p4">
-                                            <li><a href="./">공지사항</a></a></li>
-                                            <li><a href="./">공지사항</a></a></li>
-                                            <li><a href="./">공지사항</a></a></li>
-                                            <li><a href="./">공지사항</a></a></li>
-                                            <li><a href="./">공지사항</a></a></li>
-                                            <li><a href="./">공지사항</a></a></li>
-                                            <li><a href="./">공지사항</a></a></li>
+                                            <li><a href="./">공지사항</a></li>
+                                            <li><a href="./">FAQ</a></li>
+                                            <li><a href="./">이벤트</a></li>
+                                            <li><a href="./">신협찾기</a></li>
+                                            <li><a href="./">고객안내</a></li>
+                                            <li><a href="./">1:1문의</a></li>
+                                            <li><a href="./">오류신고</a></li>
+                                            <li><a href="./">개인정보처리방침</a></li>
+                                            <li><a href="./">신용정보활용체제의공시</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -113,11 +124,13 @@
                         <div class="title">
                             <h4>자주찾는 메뉴</h4>
                         </div>
-                        <div class="favs">
-                            <div class="buttons">
-                                <button type="button" class="btn-fav">아래메뉴</button>
-                                <button type="button" class="btn-fav">아래메뉴</button>
-                                <button type="button" class="btn-fav">아래메뉴</button>
+                        <div class="content">
+                            <div class="favs">
+                                <div class="buttons">
+                                    <button type="button" class="btn-fav">아래메뉴</button>
+                                    <button type="button" class="btn-fav">아래메뉴</button>
+                                    <button type="button" class="btn-fav">아래메뉴</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -221,7 +234,7 @@
                                <span class="lbl">공지</span>
                            </span>
                        </a>
-                       <button type="button" class="btn-menu">
+                       <a href="javascript:void(0)" class="link btn-menu">
                            <span class="media">
                                <div class="inner">
                                    <span class="icn">
@@ -232,7 +245,7 @@
                            <span class="meta">
                                <span class="lbl">전체</span>
                            </span>
-                       </button>
+                       </a>
                    </div>
                </article>
             </section>

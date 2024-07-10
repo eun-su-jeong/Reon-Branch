@@ -130,4 +130,18 @@
         }, 400); 
     });
 
+    /* navigation */
+
+    $('.btn-menu').on('click', function(event) {
+        event.preventDefault();
+        $('aside').addClass('is-opend');
+        $('.drawer-wrap').addClass('is-opend');
+    });
+
+    $('.btn-close').on('click', function(event) {
+        event.preventDefault();
+        $('aside').removeClass('is-opend');
+        $('.drawer-wrap').removeClass('is-opend');
+    });
+
 })();
