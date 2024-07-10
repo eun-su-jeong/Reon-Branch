@@ -37,7 +37,9 @@ body.overscroll {
     }
 }
 .container {
-  background-color: var(--bg-color-02);
+  &.branch{
+    background-color: var(--bg-color-02);
+  }
   .has-union {
     position: relative;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .12);
@@ -63,7 +65,7 @@ body.overscroll {
 
     .header-wrap {
       width: 100%;
-      article {
+      article {:
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -75,10 +77,17 @@ body.overscroll {
           padding-left: 24px;
           h1 {
             a {
+              display: block;
+              width: 120px;
               font-size: 1.2rem;
               font-weight: bold;
               color: #fff;
               text-decoration: none;
+
+              img{
+                display: block;
+                width: 100%;
+              }
 
               span {
                 font-size: .8rem;
@@ -266,11 +275,11 @@ body.overscroll {
           .toolbar {
             display: flex;
             align-items: center;
-            bottom: 0;
-            height: 28px;
             position: absolute;
             left: 0;
+            bottom: 0;
             width: 100%;
+            height: 28px;
             transition: opacity .4s ease;
             opacity: 1;
 
@@ -283,6 +292,8 @@ body.overscroll {
               text-decoration: none;
 
               .union-info {
+                color: var(--text-color-06);
+                font-weight: 500;
                 .content {
                   display: flex;
                   align-items: center;
@@ -292,7 +303,8 @@ body.overscroll {
                     display: inline-block;
                     width: 20px;
                     height: 20px;
-                    background: url("../images/icn_union_info.svg") no-repeat center / cover;
+                    mask-image: url(../images/icn_union_info.svg);
+                    background: var(--text-color-06);
                   }
                   .lbl {
                     margin-left: 4px;
@@ -302,7 +314,8 @@ body.overscroll {
               }
 
               .union-tel {
-                color: #555;
+                color: var(--text-color-06);
+                font-weight: 500;
                 .content {
                   display: flex;
                   align-items: center;
@@ -312,7 +325,8 @@ body.overscroll {
                     display: inline-block;
                     width: 20px;
                     height: 20px;
-                    background: url("../images/icn_union_phone.svg") no-repeat center / cover;
+                    mask-image: url("../images/icn_union_phone.svg");
+                    background: var(--text-color-06);
                   }
                   .lbl {
                     margin-left: 4px;
@@ -335,6 +349,7 @@ body.overscroll {
       .ui-product {
         display: flex;
         flex-direction: column;
+        gap:16px;
         position: relative;
         padding: 0 24px;
         opacity: 0;
@@ -358,12 +373,11 @@ body.overscroll {
         }
 
         .title {
-          padding-top: 16px;
+          padding-top: 24px;
 
           h4 {
             font-size: 1.25rem;
-            font-weight: 500;
-            margin-bottom: 8px;
+            font-weight: 700;
           }
         }
 
@@ -408,7 +422,7 @@ body.overscroll {
 
                       h5 {
                         font-size: 1.25rem;
-                        font-weight: 500;
+                        font-weight: 700;
                       }
                     }
 
@@ -590,6 +604,14 @@ body.overscroll {
             }
           }
         }
+      }
+    }
+  }
+
+  footer.branch{
+    section{
+      article{
+        background: var(--bg-color-02);
       }
     }
   }
