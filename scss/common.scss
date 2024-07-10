@@ -624,6 +624,12 @@ body.hidden{
                 &:focus-within {
                   outline: var(--primary-color) 1px solid;
                   border-radius: 30px;
+
+                  .btn-search{
+                    .icn{
+                      background: url("../images/icn_product_search_hover.svg") no-repeat 0 0 / cover;
+                    }
+                  }
                 }
                 .btn-search{
                   width: 20px;

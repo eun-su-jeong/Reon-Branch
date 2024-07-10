@@ -2507,6 +2507,9 @@ body.hidden {
   outline: var(--primary-color) 1px solid;
   border-radius: 30px;
 }
+.main-common .ui-seek .seek-form .content .field label .field-inner .field-wrap:focus-within .btn-search .icn {
+  background: url("../images/icn_product_search_hover.svg") no-repeat 0 0/cover;
+}
 .main-common .ui-seek .seek-form .content .field label .field-inner .field-wrap .btn-search {
   width: 20px;
   height: 20px;
