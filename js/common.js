@@ -152,4 +152,12 @@
         $('.drawer-wrap').removeClass('is-opend');
         $('body').removeClass('hidden');
     });
+
+    /*back button*/
+    $(document).ready(function() {
+        $('#backButton').on('click', function() {
+            window.history.back();
+        });
+    });
+
 })();
