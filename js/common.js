@@ -93,6 +93,17 @@
         }, 500);
     });
 
+    /* button click */
+    $('.filter input[type="checkbox"]').click(function(event) {
+        const checkbox = event.target;
+        const label = $(checkbox).parent();
+        if ($(checkbox).is(':checked')) {
+            label.addClass('selected');
+        } else {
+            label.removeClass('selected');
+        }
+    });
+
     /* accordion */
     $('.faq-list .answer').hide();
     $('.faq-list .question .icn').css('transform', 'rotate(0deg)');

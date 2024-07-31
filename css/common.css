@@ -1219,7 +1219,7 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
 }
 .container .faq .ui-faq .search-form {
   width: 100%;
-  padding: 0 24px;
+  padding: 16px 24px;
 }
 .container .faq .ui-faq .search-form .title {
   display: flex;
@@ -1310,7 +1310,8 @@ body.overscroll .has-union .union-wrap .ui-product .toolbar.hidden {
   font-size: 0.876rem;
 }
 .container .faq .ui-faq .search-filter .filter label:hover {
-  background-color: #e0e0e0;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 .container .faq .ui-faq .search-filter .filter label input[type=checkbox] {
   display: none;
